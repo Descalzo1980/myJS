@@ -26,28 +26,48 @@
 // console.log(typeof(answers));
 // console.log(typeof(null));
 
-console.log('5' + " - object");
-console.log(5 + "4");
+// console.log('5' + " - object");
+// console.log(5 + "4");
 
-let incr = 10,
-    decr = 10;
+// let incr = 10,
+//     decr = 10;
 
-// incr++;
-// decr--;
-console.log(incr++);
-console.log(incr);
-// console.log(decr--);
+// // incr++;
+// // decr--;
+// console.log(incr++);
+// console.log(incr);
+// // console.log(decr--);
 
-let a = 8;
+// let a = 8;
 
-console.log(typeof(a));
+// console.log(typeof(a));
 
-console.log(2 + 2 * 2 !== 8);
+// console.log(2 + 2 * 2 !== 8);
 
-const isChecked = false,
-      isClose = false;
+// const isChecked = false,
+//       isClose = false;
       
-console.log(isChecked || !isClose);
+// console.log(isChecked || !isClose);
+
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies:{},
+    actors:{},
+    genres:[],
+    privat:false
+};
+
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
 
 
 
