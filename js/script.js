@@ -61,11 +61,18 @@ const personalMovieDB = {
 
 const a = prompt('Один из последних просмотренных фильмов?', ''),
       b = prompt('На сколько оцените его?', ''),
-      c = prompt('Один из последних просмотренных фильмов?', ''),
-      d = prompt('На сколько оцените его?', '');
+      e = prompt('Один из последних просмотренных фильмов?', ''),
+      f = prompt('На сколько оцените его?', ''),
+      c = prompt('Любимый актер?', ''),
+      d = prompt('Сколько ему лет?', '');
+    //   c = prompt('Один из последних просмотренных фильмов?', ''),
+    //   d = prompt('На сколько оцените его?', '');
 
+personalMovieDB.actors[c] = d;
 personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+personalMovieDB.movies[e] = f;
+
+// personalMovieDB.movies[c] = d;
 
 console.log(personalMovieDB);
 
