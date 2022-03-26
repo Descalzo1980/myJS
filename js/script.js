@@ -99,21 +99,44 @@
     // let b = ++a;
     // console.log(b);
 
-    const num = 53;
+    // const num = '50';
 
-    switch (num){
-        case 49:
-            console.log('Ошибка');
-            break;
-        case 51:
-            console.log('Jib,rf');
-            break;
-        case 50:
-            console.log('Верно');
-            break;
-        default:
-            console.log('Не в этот раз');
-            break;
+    // switch (num){
+    //     case '49':
+    //         console.log('Ошибка');
+    //         break;
+    //     case '51':
+    //         console.log('Jib,rf');
+    //         break;
+    //     case '50':
+    //         console.log('Верно');
+    //         break;
+    //     default:
+    //         console.log('Не в этот раз');
+    //         break;
+    // }
+
+    let num = 50;
+
+    // while (num <= 55){
+    //     console.log(num);
+    //     num++;
+    // }
+
+    // do {
+    //     console.log(num);
+    //     num++;  
+    // }
+    // while(num < 55);
+
+
+// повтор 7 раз
+    for (let i = 1; i < 10; i++){
+        if (i === 6){
+            // break; прерыв
+            continue; // продолжение
+        }
+        console.log(i);
     }
 
 
