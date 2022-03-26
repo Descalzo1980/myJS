@@ -49,32 +49,72 @@
       
 // console.log(isChecked || !isClose);
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies:{},
-    actors:{},
-    genres:[],
-    privat:false
-};
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies:{},
+//     actors:{},
+//     genres:[],
+//     privat:false
+// };
 
-const a = prompt('Один из последних просмотренных фильмов?', ''),
-      b = prompt('На сколько оцените его?', ''),
-      e = prompt('Один из последних просмотренных фильмов?', ''),
-      f = prompt('На сколько оцените его?', ''),
-      c = prompt('Любимый актер?', ''),
-      d = prompt('Сколько ему лет?', '');
-    //   c = prompt('Один из последних просмотренных фильмов?', ''),
-    //   d = prompt('На сколько оцените его?', '');
+// const a = prompt('Один из последних просмотренных фильмов?', ''),
+//       b = prompt('На сколько оцените его?', ''),
+//       e = prompt('Один из последних просмотренных фильмов?', ''),
+//       f = prompt('На сколько оцените его?', ''),
+//       c = prompt('Любимый актер?', ''),
+//       d = prompt('Сколько ему лет?', '');
+//     //   c = prompt('Один из последних просмотренных фильмов?', ''),
+//     //   d = prompt('На сколько оцените его?', '');
 
-personalMovieDB.actors[c] = d;
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[e] = f;
+// personalMovieDB.actors[c] = d;
+// personalMovieDB.movies[a] = b;
+// personalMovieDB.movies[e] = '';
 
-// personalMovieDB.movies[c] = d;
+// // personalMovieDB.movies[c] = d;
 
-console.log(personalMovieDB);
+// console.log(personalMovieDB);
+
+    // if (4 != 9){
+    //     console.log('OK');
+    // } else{
+    //     console.log('It Is not equal!');
+    // }
+
+    // const num = 1000;
+
+    // if (num < 49){
+    //     console.log('Error');
+    // } else if (num > 100){
+    //     console.log('Too muth'); 
+    // } else {
+    //     console.log('Ok');
+    // }
+
+    // const num = 1000;   
+    // (num === 50) ? console.log('Ok') : console.log('Error');
+
+    // let a = 4;
+    // let b = ++a;
+    // console.log(b);
+
+    const num = 53;
+
+    switch (num){
+        case 49:
+            console.log('Ошибка');
+            break;
+        case 51:
+            console.log('Jib,rf');
+            break;
+        case 50:
+            console.log('Верно');
+            break;
+        default:
+            console.log('Не в этот раз');
+            break;
+    }
 
 
 
