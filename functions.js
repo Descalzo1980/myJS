@@ -37,6 +37,6 @@ const logger = function(){ //создается только тогда, ког�
 logger();
 
 const calc = (a, b) => {
-    console.log('1')
+    console.log('1');
     return a + b;
 };
