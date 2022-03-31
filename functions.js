@@ -170,3 +170,28 @@ function showSomeAll(){
 
 showSomeAll(4,5,6);
 
+function showSomeAll2(...args){
+    console.log(args);
+    // let sum = 0;
+    // for(let i = 0; i < arguments.length; i++){
+    //     sum +=arguments[i];
+    // }
+    let sum = args.reduce( (accum,item) => accum += item);
+    console.log(sum);
+}
+
+showSomeAll(4,5,6,7);
+
+
+//функция как аргумент
+
+function showAll(res){
+    document.querySelector('.out-1').innerHTML = `<br>${res}</br>`;
+}
+
+function showSomeAll3(drawFunction,...num){
+    drawFunction(num);
+}
+
+showSomeAll3(showAll,55,56,45,5555555);
+
