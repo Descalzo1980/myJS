@@ -147,9 +147,26 @@ function blockWidth(){
 
 document.querySelector('.out-1').addEventListener('mousemove', blockWidth);
 
-function showSum (x, y , elem = '.out-1'){
-    document.querySelector(elem).textContent = x + y;
+let x = 10, y = 15;
+let res = x + y;
+
+function showSum (x, y){
+    console.log(res);
 }
 
-showSum(10,15,'.out-1');//выводим данные в блок
+showSum();
+// let res = showSum(10,15,'.out-1');//выводим данные в блок
+// console.log(res);
+
+function showSomeAll(){
+    console.log(arguments);
+    // let sum = 0;
+    // for(let i = 0; i < arguments.length; i++){
+    //     sum +=arguments[i];
+    // }
+    let sum = Array.from(arguments).reduce( (accum,item) => accum += item);
+    console.log(sum);
+}
+
+showSomeAll(4,5,6);
 
