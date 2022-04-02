@@ -9,10 +9,21 @@ const options = {
     colors:{
         border:'black',
         background:'red'
+    },
+    makeTest:function(){
+        console.log("Test");
     }
 };
 
-console.log(Object.keys(options));// массив получаем на выходе
+options.makeTest();
+
+const {border,background} = options.colors;
+
+document.querySelector('.out-2').innerHTML = `<br>${options.colors}</br>`;
+
+console.log(border,'</br>', background);
+
+console.log(Object.keys(options).length);// массив получаем на выходе
 
 // console.log(options["colors"]["border"]);
 
