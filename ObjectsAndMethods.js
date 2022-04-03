@@ -19,9 +19,7 @@ options.makeTest();
 
 const {border,background} = options.colors;
 
-document.querySelector('.out-2').innerHTML = `<br>${options.colors}</br>`;
-
-console.log(border,'</br>', background);
+console.log(border, background);
 
 console.log(Object.keys(options).length);// массив получаем на выходе
 
@@ -63,4 +61,6 @@ console.log(Object.keys(options).length);// массив получаем на �
 // }
 
 // console.log(counter); //4 простой перебор
+
+
 

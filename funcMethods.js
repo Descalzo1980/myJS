@@ -21,7 +21,7 @@ console.log(logger.slice(2));//режет со второго
 
 console.log(logger.substring(1, 5)); // не принимает отрицательных значений
 
-console.log(logger.substr(1, 5)); //сколько вырезать
+console.log(logger.substring(1, 5)); //сколько вырезать
 
 const num = 12.2;
 
